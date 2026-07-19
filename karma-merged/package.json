@@ -1,0 +1,27 @@
+{
+  "name": "karma-lang",
+  "version": "0.2.1",
+  "description": "A small, readable language and toolset for building simple, stable, page-based websites without heavy frameworks or boilerplate.",
+  "type": "module",
+  "main": "karma-compiler.js",
+  "bin": {
+    "karma": "./karma-cli.js",
+    "karma-offline": "./karma-offline-cli.js"
+  },
+  "scripts": {
+    "offline": "node ./karma-offline-cli.js",
+    "lint:example": "node ./karma-offline-cli.js lint example.js",
+    "test": "node karma-compiler.js test.karma && node karma-validator.js test.karma"
+  },
+  "keywords": ["karma", "static-site", "compiler", "html", "dsl", "no-framework"],
+  "author": "Tia Simmons (Sin Studio)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinhara666/karma.git"
+  },
+  "homepage": "https://github.com/sinhara666/karma#readme",
+  "bugs": {
+    "url": "https://github.com/sinhara666/karma/issues"
+  }
+}
